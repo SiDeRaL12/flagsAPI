@@ -6,7 +6,7 @@ async function countries() {
         const response = await fetch(API_URL);
         const data = await response.json();
         
-        // Assume we want the names of all countries
+
         let countryData = data.map(country => ({
             name: country.name.common,
             googleMaps: country.maps.googleMaps,
